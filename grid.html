@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid</title>
+    <style>
+        .wholediv {
+            display: grid;
+            grid-template-columns: 200px 75px;
+        }
+
+        .ist {
+            background-color: gray;
+        }
+
+        .jst {
+            background-color: rgb(193, 46, 171);
+        }
+
+        .olediv {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+
+        }
+
+        .head {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            row-gap: 10px;
+            column-gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wholediv">
+        <div class="ist">
+            200px
+        </div>
+        <div class="jst">
+            75px
+        </div>
+    </div>
+
+    <div class="olediv">
+        <div class="ist"> col1</div>
+        <div class="jst">col2</div>
+        <div class="ist">col3</div>
+
+    </div>
+    <div class="head">
+
+        <div class="ist"> col1</div>
+        <div class="jst">col2</div>
+        <div class="ist">col3</div>
+        <div class="jst">col4</div>
+        <div class="ist"> col5</div>
+        <div class="jst">col6</div>
+        <div class="ist">col7</div>
+        <div class="jst">col8</div>
+        <div class="jst">col9</div>
+
+
+    </div>
+</body>
+
+</html>
